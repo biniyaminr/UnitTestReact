@@ -1,0 +1,194 @@
+# ignore requirements.txt force to build
+requirements.txt
+.env*
+.env.*
+.env.pro
+**/.env*
+
+**.gitstatistics/**
+
+# ignore dp-cache
+dp-cache/**
+notebooks/dp-cache/**
+
+# ignore all local configuration
+conf/local/**
+!conf/local/.gitkeep
+
+# ignore potentially sensitive credentials files
+conf/**/*credentials*
+
+
+# remove lock packages
+**/package-lock.json
+*package-lock.json
+
+
+# ignore somke_tests reports
+**/smoke_tests/report/**
+**/smoke_tests/reports/**
+
+# ignore execution files generated
+__pycache__/
+*.pyc
+notebooks/.ipynb_checkpoints/*
+
+# ignore everything in the following folders
+data/**
+logs/**
+
+
+# except their sub-folders
+# !data/**/
+# !logs/**/
+
+# also keep all .gitkeep files
+!.gitkeep
+
+# also keep the example dataset
+!data/01_raw/iris.csv
+
+!docs/source/tracking/BogleEA_planning.xlsx
+
+##########################
+# Common files
+
+# IntelliJ
+.idea/
+*.iml
+out/
+.idea_modules/
+
+### macOS
+*.DS_Store
+.AppleDouble
+.LSOverride
+.Trashes
+
+# Vim
+*~
+.*.swo
+.*.swp
+
+# emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+
+# JIRA plugin
+atlassian-ide-plugin.xml
+
+# C extensions
+*.so
+
+### Python template
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+#  Usually these files are written by a python script from a template
+#  before PyInstaller builds the exe, so as to inject date/other infos into it.
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+
+# Translations
+*.mo
+*.pot
+
+# Django stuff:
+*.log
+.static_storage/
+.media/
+local_settings.py
+
+# Flask stuff:
+instance/
+.webassets-cache
+
+# Scrapy stuff:
+.scrapy
+
+# Sphinx documentation
+docs/_build/
+
+# PyBuilder
+target/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IPython
+.ipython/profile_default/history.sqlite
+.ipython/profile_default/startup/README
+
+# pyenv
+.python-version
+
+# celery beat schedule file
+celerybeat-schedule
+
+# SageMath parsed files
+*.sage.py
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.pro
+
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
+
+# React
+*.snap
+**/__snapshots__/*
+citec_app/trades.xlsx
